@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Pro | Learn With Playing Code</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎮 Tic-Tac-Toe Pro</h1>
+        <p>Challenge your friends and win exciting rewards!</p>
+    </header>
+
+    <div class="game-container">
+
+        <div class="status" id="status">
+            Player X's Turn
+        </div>
+
+        <div class="board" id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <button onclick="restartGame()">
+            🔄 Restart Game
+        </button>
+
+    </div>
+
+    <div class="popup" id="winnerPopup">
+
+        <div class="popup-content">
+
+            <h2>🏆 Congratulations!</h2>
+
+            <div class="gift">🎁</div>
+
+            <p id="winnerMessage">
+                Player <strong>X</strong> is the Champion!
+            </p>
+
+            <p class="winner-description">
+                You have earned a virtual Winner Gift Badge
+                for your excellent performance!
+            </p>
+
+            <button class="close-btn" onclick="closePopup()">
+                Continue Playing
+            </button>
+
+        </div>
+
+    </div>
+
+    <footer>
+
+        <h3>Greetings from Fayaz 🚀</h3>
+
+        <p>Learn With Playing Code</p>
+
+        <p>
+            Email:
+            <a href="mailto:attarfayaz529@gmail.com">
+                attarfayaz529@gmail.com
+            </a>
+        </p>
+
+        <p>
+            © 2026 Tic-Tac-Toe Professional Edition
+        </p>
+
+    </footer>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
